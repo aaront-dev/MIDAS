@@ -1,0 +1,42 @@
+.midas-alert {
+    position: fixed;
+    top: 15px;
+    right: -300px;
+    padding: 14px 20px;
+    background: #fff;
+    border-left: 6px solid;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.35s ease;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.midas-alert.show {
+    right: 20px;
+    opacity: 1;
+}
+
+.midas-alert.success {
+    border-color: #2ecc71;
+    color: #1b7a3a;
+}
+
+.midas-alert.danger {
+    border-color: #e74c3c;
+    color: #c0392b;
+}
+
+.midas-alert.warning {
+    border-color: #f1c40f;
+    color: #b7950b;
+}
+
+.midas-icon {
+    font-size: 18px;
+}

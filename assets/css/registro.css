@@ -1,0 +1,140 @@
+/* ================================
+   ESTILO IDÉNTICO A inicio.css
+   (pero adaptado al registro)
+================================ */
+
+/* Fondo futurista oscuro */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0f10, #1b1c22);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Caja del formulario (igual a login pero más ancho) */
+.register-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 40px 50px;
+    border-radius: 18px;
+    width: 380px;
+    text-align: center;
+    border: 1px solid rgba(212,175,55,0.3);
+    box-shadow: 0 0 25px rgba(212,175,55,0.25);
+
+    /* NOTA IMPORTANTE:
+       No usamos opacity:0 nunca,
+       así no desaparece si js falla. */
+    opacity: 1;
+}
+
+/* Logo */
+.logo-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 150px;
+    filter: drop-shadow(0 0 10px rgba(255,215,0,0.4));
+}
+
+/* Título */
+.title {
+    margin-bottom: 25px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #e4c670;
+    text-shadow: 0 0 8px rgba(212,175,55,0.5);
+}
+
+/* Inputs */
+.input-box {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Botón */
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #d4af37;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-register:hover {
+    background: #f2d675;
+}
+
+/* Texto inferior */
+.bottom-text {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    color: #4ca3ff;
+}
+
+/* Mensajes debajo de contraseñas */
+.msg-pass {
+    font-size: 14px;
+    margin-top: -10px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.msg-pass.show {
+    opacity: 1;
+}
+
+.msg-pass.error {
+    color: rgb(255, 100, 100);
+    font-weight: bold;
+}
+
+.msg-pass.success {
+    color: rgb(100, 255, 100);
+    font-weight: bold;
+}
+
+/* Alertas tipo inicio.css */
+.alert {
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    animation: fadeIn 0.7s ease forwards;
+}
+
+.alert.success {
+    background: #c8f7c5;
+    color: #1e7e34;
+}
+
+.alert.danger {
+    background: #f7c5c5;
+    color: #7e1e1e;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

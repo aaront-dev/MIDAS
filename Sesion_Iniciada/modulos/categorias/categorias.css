@@ -1,0 +1,229 @@
+/* ============================
+   MIDAS PRO — CATEGORÍAS
+   Black & Gold
+============================ */
+
+/* CONTENEDOR */
+.categorias-module {
+    padding: 20px;
+}
+
+/* BOTÓN NUEVO */
+.new-btn {
+    background: #101010;
+    color: #ffcf4d;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #101010;
+    transition: 0.2s;
+}
+
+.new-btn:hover {
+    background: #ffcf4d;
+    color: #101010;
+}
+
+/* TABLA */
+.table-wrapper {
+    margin-top: 20px;
+    background: white;
+    padding: 14px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.midas-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.midas-table thead tr {
+    background: #101010;
+}
+
+.midas-table th {
+    color: #ffcf4d;
+    padding: 14px;
+    font-weight: bold;
+    border-right: 2px solid #262626;
+}
+
+.midas-table th:last-child {
+    border-right: none;
+}
+
+.midas-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.midas-table tbody tr:hover {
+    background: #f7f4ea;
+}
+
+/* BOTONES */
+.btn.small {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: .2s;
+}
+
+.btn.edit {
+    background: #fff;
+    color: #000;
+    border: 1px solid #101010;
+}
+
+.btn.edit:hover {
+    background: #101010;
+    color: #ffcf4d;
+}
+
+.btn.danger {
+    background: #d9534f;
+    color: white;
+}
+
+.btn.danger:hover {
+    background: #b52b27;
+}
+
+/* ============================
+   MODAL PRO (Black & Gold)
+============================ */
+
+.midas-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 800 !important;
+}
+
+
+.midas-modal.hidden {
+    display: none;
+}
+
+.midas-modal.fade {
+    animation: fadeIn .15s ease;
+}
+
+@keyframes fadeIn {
+    from { background: rgba(0,0,0,0); }
+    to   { background: rgba(0,0,0,0.55); }
+}
+
+.midas-modal-content {
+    background: #101010;
+    width: 480px;
+    max-width: 92%;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+    animation: slideDown .25s ease forwards;
+    transform: translateY(-18px);
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+}
+
+.modal-title {
+    text-align: center;
+    color: #ffcf4d;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    color: #ffaa3b;
+    font-weight: 600;
+}
+
+/* INPUT */
+.m-input {
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    transition: .15s;
+}
+
+.m-input:focus {
+    outline: none;
+    border-color: #ffcf4d;
+    box-shadow: 0 0 4px rgba(255,207,77,0.6);
+}
+
+/* BOTONES */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn.primary {
+    background: #ffcf4d;
+    color: #101010;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn.primary:hover {
+    background: #e6b843;
+}
+
+.btn.secondary {
+    background: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn.secondary:hover {
+    background: #b52b27;
+}
+
+/* SUBCATEGORÍAS */
+.subcat-row {
+    display: flex;
+    justify-content: space-between;
+    background: #f6f6f6;
+    border-radius: 6px;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+
+

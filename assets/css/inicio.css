@@ -1,0 +1,82 @@
+/* Fondo futurista suave */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0f10, #1b1c22);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 40px 50px;
+    border-radius: 18px;
+    width: 360px;
+    text-align: center;
+    border: 1px solid rgba(212,175,55,0.3);
+    box-shadow: 0 0 25px rgba(212,175,55,0.25);
+}
+
+/* Logo */
+.logo-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 150px;
+    filter: drop-shadow(0 0 10px rgba(255,215,0,0.4));
+}
+
+/* Título */
+.title {
+    margin-bottom: 25px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #e4c670;
+    text-shadow: 0 0 8px rgba(212,175,55,0.5);
+}
+
+/* Inputs */
+.input-box {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Botón */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #d4af37;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-login:hover {
+    background: #f2d675;
+}
+
+/* Texto inferior */
+.bottom-text {
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    color: #4ca3ff;
+}

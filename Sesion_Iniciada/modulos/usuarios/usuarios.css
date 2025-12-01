@@ -1,0 +1,264 @@
+/* ======================================================
+   MIDAS PRO — SUBCATEGORÍAS
+   Black & Gold • Estilo premium uniforme
+====================================================== */
+
+/* CONTENEDOR */
+.subcategorias-module {
+    padding: 20px;
+}
+
+
+/* TÍTULO */
+.module-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #101010;
+}
+
+/* BOTÓN NUEVO */
+.new-btn {
+    margin-left: 0rem;
+    background: #101010;
+    color: #ffcf4d;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #101010;
+    transition: 0.2s;
+}
+
+.new-btn:hover {
+    background: #ffcf4d;
+    color: #101010;
+}
+
+.usuarios-tools{
+    margin-left: 80%;
+}
+
+/* ============================
+   TABLA
+============================ */
+.table-wrapper {
+    margin-top: 20px;
+    background: white;
+    padding: 14px;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.midas-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.midas-table thead tr {
+    background: #101010;
+}
+
+.midas-table th {
+    color: #ffcf4d;
+    padding: 14px;
+    font-weight: bold;
+    border-right: 2px solid #262626;
+}
+
+.midas-table th:last-child {
+    border-right: none;
+}
+
+.midas-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ececec;
+}
+
+.midas-table tbody tr:hover {
+    background: #f7f4ea;
+}
+
+/* Mensaje vacío */
+.midas-table td[colspan] {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* ============================
+   BOTONES DE ACCIÓN
+============================ */
+.btn.small {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+
+/* EDITAR */
+.btn.edit {
+    background: #fff;
+    color: #000;
+    border: 1px solid #101010;
+}
+
+.btn.edit:hover {
+    background: #101010;
+    color: #ffcf4d;
+}
+
+/* ELIMINAR */
+.btn.danger {
+    background: #d9534f;
+    color: white;
+}
+
+.btn.danger:hover {
+    background: #b52b27;
+}
+
+/* ============================
+   MODAL PRO (Black & Gold)
+============================ */
+
+.midas-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.midas-modal.hidden {
+    display: none;
+}
+
+.midas-modal.fade {
+    animation: fadeIn .15s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { background: rgba(0,0,0,0); }
+    to   { background: rgba(0,0,0,0.55); }
+}
+
+.midas-modal-content {
+    background: #101010;
+    width: 480px;
+    max-width: 92%;
+    padding: 25px 28px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+    transform: translateY(-18px);
+    animation: slideDown .25s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to   { transform: translateY(0px); opacity: 1; }
+}
+
+.modal-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffcf4d;
+    margin-bottom: 18px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* FIELD */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    color: #ffaa3b;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* SELECT + INPUT */
+.m-input {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    transition: all .15s ease;
+}
+
+.m-input:focus {
+    outline: none;
+    border-color: #ffcf4d;
+    box-shadow: 0 0 4px rgba(255, 207, 77, 0.6);
+}
+
+/* SELECT con flecha custom */
+.m-input.select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffcf4d" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 18px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+/* BOTONES DEL MODAL */
+.modal-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn.primary {
+    background: #ffcf4d;
+    color: #101010;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: .15s;
+}
+
+.btn.primary:hover {
+    background: #e6b843;
+}
+
+.btn.secondary {
+    background: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: .15s;
+}
+
+.btn.secondary:hover {
+    background: #c4413d;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .modal-body {
+        gap: 14px;
+    }
+}
+
+
+
+
