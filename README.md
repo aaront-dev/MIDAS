@@ -52,42 +52,6 @@ Verificación avanzada en procesos críticos.
 
 Cada módulo vive en su propio entorno con HTML, CSS y JS dedicados, lo que permite que MIDAS crezca sin comprometer estabilidad.
 
-📂 Estructura del Proyecto (según el ZIP actual)
-midas/
-├── Cerrar_Sesion.php
-├── DataBase/
-│   ├── Conection.php
-│   ├── Connection.php
-│   ├── … Archivos SQL, control y conexión
-├── Inicio/
-│   ├── index.php
-│   ├── estilos.css
-│   ├── script.js
-├── Sesion_Iniciada/
-│   ├── index.php
-│   ├── estilos.css
-│   ├── script.js
-│   ├── modulos/
-│   │   ├── categorias/
-│   │   │   ├── categorias.php
-│   │   │   ├── categorias.js
-│   │   │   ├── categorias.css
-│   │   │   └── modal/
-│   │   │       ├── modal_categorias.php
-│   │   │       ├── modal.js
-│   │   │       └── modal.css
-│   │   ├── usuarios/
-│   │   │   ├── usuarios.php
-│   │   │   ├── usuarios.js
-│   │   │   ├── usuarios.css
-│   │   │   └── modal_usuarios/
-│   │   │       ├── modal.php
-│   │   │       ├── modal.js
-│   │   │       └── modal.css
-├── login/
-│   ├── login.php
-│   ├── login.css
-├── otros módulos y utilidades…
 
 🛠️ Tecnologías Usadas
 Frontend
